@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: kafka_retry_store
+                          
+info.component: Kafka Retry Publisher Service
+
+server.port: ${SERVER_PORT:9085}
+
+management.server.port: ${MANAGEMENT_SERVER_PORT:9086}
